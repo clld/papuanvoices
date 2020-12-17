@@ -56,6 +56,7 @@ def main(args):
             lang['id'],
             id=lang['id'],
             name=lang['name'],
+            description=lang['LongName'],
             latitude=lang['latitude'],
             longitude=lang['longitude'],
             glottocode=lang['glottocode'],
@@ -66,13 +67,14 @@ def main(args):
 
     refs = collections.defaultdict(list)
 
-
     for param in args.cldf.iter_rows('ParameterTable', 'id', 'concepticonReference', 'name'):
         data.add(
             models.Concept,
             param['id'],
             id=param['id'],
             name='{} [{}]'.format(param['name'], param['id']),
+            concepticon_id=param['concepticonReference'],
+            concepticon_gloss=param['Concepticon_Gloss'],
         )
     f2a = form2audio(args.cldf)
     for form in args.cldf.iter_rows('FormTable', 'id', 'form', 'languageReference', 'parameterReference', 'source'):

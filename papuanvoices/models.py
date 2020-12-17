@@ -35,4 +35,5 @@ class Variety(CustomModelMixin, common.Language, HasFamilyMixin):
 class Concept(CustomModelMixin, common.Parameter):
     pk = Column(Integer, ForeignKey('parameter.pk'), primary_key=True)
     concepticon_id = Column(Unicode)
+    concepticon_gloss = Column(Unicode)
 

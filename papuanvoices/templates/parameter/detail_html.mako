@@ -3,7 +3,9 @@
 <%! active_menu_item = "parameters" %>
 <%block name="title">${_('Parameter')} ${ctx.name}</%block>
 
-
+<%block name="head">
+    <link rel="stylesheet" href="${req.static_url('clld_audio_plugin:static/clld_audio_plugin.css')}">
+</%block>
 
 <h2>${_('Parameter')} ${ctx.name}</h2>
 
