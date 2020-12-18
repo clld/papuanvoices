@@ -10,8 +10,16 @@
         ${_('of data curated at')}
         ${h.external_link('https://github.com/lexibank/papuanvoices', label='lexibank/papuanvoices')}.
         ${_('All released version are accessible via')} <br/>
-        <a href="https://doi.org/10.5281/zenodo._">
-            <img src="https://zenodo.org/badge/DOI/10.5281/zenodo._.svg" alt="DOI">
+        <a href="https://doi.org/10.5281/zenodo.4350690">
+            <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.4350690.svg" alt="DOI">
+        </a>
+        <br/>
+        ${_('on ZENODO as well')}.
+    </p>
+        <p>
+        Corresponding versions of the audio files are available at<br/>
+        <a href="https://doi.org/10.5281/zenodo.4350923">
+            <img src="https://zenodo.org/badge/DOI/10.5281/zenodo.4350923.svg" alt="DOI">
         </a>
         <br/>
         ${_('on ZENODO as well')}.
