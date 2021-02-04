@@ -26,7 +26,7 @@ def main(args):
     assert args.glottolog, 'The --glottolog option is required!'
 
     data = Data()
-    data.add(
+    ds = data.add(
         common.Dataset,
         papuanvoices.__name__,
         id=papuanvoices.__name__,
@@ -49,6 +49,10 @@ def main(args):
         name=args.cldf.properties.get('dc:title'),
         description=args.cldf.properties.get('dc:bibliographicCitation'),
     )
+
+    data.add(common.Contributor, 'gray', id='gray', name='Russell Gray')
+    for i, ed in enumerate(['gray']):
+        data.add(common.Editor, ed, dataset=ds, contributor=data['Contributor'][ed], ord=i)
 
     for lang in args.cldf.iter_rows('LanguageTable', 'id', 'glottocode', 'name', 'latitude', 'longitude'):
         data.add(
