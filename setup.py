@@ -19,11 +19,11 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        'clld>=7.4.1',
+        'clld>=8.0.0',
         'clld-audio-plugin',
         'clld-glottologfamily-plugin>=4.0',
-        'pyglottolog',
-        'clldmpg',
+        'pyglottolog>=3.6.0',
+        'clldmpg>=4.2.0',
 
 ],
 extras_require={
