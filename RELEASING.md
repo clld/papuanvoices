@@ -4,7 +4,7 @@
 
 * create the database (with data repo in `./papuanvoices-data/`)
   ```
-  clld initdb --cldf ./papuanvoices-data/ --glottolog <local-glottolog-repo> development.ini
+  clld initdb --cldf ./papuanvoices-data/cldf/cldf-metadata.json --glottolog <local-glottolog-repo> development.ini
   ```
 
 * run tests
