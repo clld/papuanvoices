@@ -1,0 +1,165 @@
+# English translations for papuanvoices.
+# Copyright (C) 2024 ORGANIZATION
+# This file is distributed under the same license as the papuanvoices
+# project.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: papuanvoices 0.0\n"
+"Report-Msgid-Bugs-To: EMAIL@ADDRESS\n"
+"POT-Creation-Date: 2024-12-05 08:46+0100\n"
+"PO-Revision-Date: 2024-12-05 08:45+0100\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.13.0\n"
+
+#: papuanvoices/__init__.py:12
+#: papuanvoices/templates/dataset/detail_html.mako:20
+msgid "Languages"
+msgstr ""
+
+#: papuanvoices/__init__.py:13
+#: papuanvoices/templates/dataset/detail_html.mako:24
+msgid "Parameters"
+msgstr "Concepts"
+
+#: papuanvoices/__init__.py:14 papuanvoices/datatables.py:122
+#: papuanvoices/datatables.py:146
+#: papuanvoices/templates/language/detail_html.mako:4
+#: papuanvoices/templates/language/detail_html.mako:6
+#: papuanvoices/templates/value/detail_html.mako:12
+msgid "Language"
+msgstr ""
+
+#: papuanvoices/__init__.py:15
+#: papuanvoices/templates/parameter/detail_html.mako:4
+#: papuanvoices/templates/parameter/detail_html.mako:10
+msgid "Parameter"
+msgstr "Concept"
+
+#: papuanvoices/datatables.py:40
+#: papuanvoices/templates/language/detail_html.mako:24
+msgid "Family"
+msgstr ""
+
+#: papuanvoices/datatables.py:61 papuanvoices/datatables.py:110
+#: papuanvoices/datatables.py:137
+msgid "English"
+msgstr ""
+
+#: papuanvoices/datatables.py:64
+msgid "# words"
+msgstr ""
+
+#: papuanvoices/datatables.py:65
+msgid "number of words per concept"
+msgstr ""
+
+#: papuanvoices/datatables.py:115 papuanvoices/datatables.py:142
+msgid "Papuan Malay"
+msgstr ""
+
+#: papuanvoices/datatables.py:127 papuanvoices/datatables.py:151
+msgid "Location"
+msgstr ""
+
+#: papuanvoices/datatables.py:156
+msgid "Word"
+msgstr ""
+
+#: papuanvoices/datatables.py:157
+#: papuanvoices/templates/value/detail_html.mako:10
+msgid "Segments"
+msgstr ""
+
+#: papuanvoices/datatables.py:166
+msgid "Name"
+msgstr ""
+
+#: papuanvoices/datatables.py:167
+msgid "Role"
+msgstr ""
+
+#: papuanvoices/templates/credits.mako:3
+msgid "Acknowlegements"
+msgstr ""
+
+#: papuanvoices/templates/credits.mako:6
+msgid "This site drew inspiration from Paul Heggarty's"
+msgstr ""
+
+#: papuanvoices/templates/download.mako:4
+msgid "Downloads"
+msgstr ""
+
+#: papuanvoices/templates/download.mako:8
+msgid "Papuan Voices serves the latest"
+msgstr ""
+
+#: papuanvoices/templates/download.mako:9
+msgid "released version"
+msgstr ""
+
+#: papuanvoices/templates/download.mako:10
+msgid "of data curated at"
+msgstr ""
+
+#: papuanvoices/templates/download.mako:12
+msgid "All released version are accessible via"
+msgstr ""
+
+#: papuanvoices/templates/download.mako:17
+#: papuanvoices/templates/download.mako:25
+msgid "on ZENODO as well"
+msgstr ""
+
+#: papuanvoices/templates/dataset/detail_html.mako:16
+msgid "Statistics"
+msgstr ""
+
+#: papuanvoices/templates/dataset/detail_html.mako:28
+#: papuanvoices/templates/value/index_html.mako:5
+#: papuanvoices/templates/value/index_html.mako:6
+msgid "Values"
+msgstr "Words"
+
+#: papuanvoices/templates/dataset/detail_html.mako:39
+msgid ""
+"Papuan Voices presents phonetically-transcribed primary recordings of "
+"languages from West Papua."
+msgstr ""
+
+#: papuanvoices/templates/dataset/detail_html.mako:43
+msgid "Cite the Papuan Voices dataset as"
+msgstr ""
+
+#: papuanvoices/templates/language/detail_html.mako:14
+msgid "Contributors"
+msgstr ""
+
+#: papuanvoices/templates/value/detail_html.mako:4
+msgid "Lexeme"
+msgstr ""
+
+#: papuanvoices/templates/value/detail_html.mako:6
+msgid "Value"
+msgstr "Word"
+
+#: papuanvoices/templates/value/detail_html.mako:14
+msgid "Meaning"
+msgstr ""
+
+#: papuanvoices/templates/value/detail_html.mako:17
+msgid "References"
+msgstr ""
+
+#: papuanvoices/templates/value/detail_html.mako:30
+msgid "Sentences"
+msgstr ""
+
