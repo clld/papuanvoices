@@ -3,12 +3,12 @@
 * data is located [here](https://github.com/lexibank/papuanvoices).  
 
 * create the database (with data repo in `./papuanvoices-data/`)
-  ```
-  clld initdb --cldf ./papuanvoices-data/cldf/cldf-metadata.json --glottolog <local-glottolog-repo> development.ini
+  ```shell
+  clld initdb --cldf ../papuanvoices-cldf/cldf/cldf-metadata.json --glottolog ../../glottolog/glottolog development.ini
   ```
 
 * run tests
-  ```
+  ```shell
   pytest
   ```
 

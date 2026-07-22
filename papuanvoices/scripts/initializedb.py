@@ -120,7 +120,6 @@ def main(args):
     )
 
 
-
 def prime_cache(args):
     """If data needs to be denormalized for lookup, do that here.
     This procedure should be separate from the db initialization, because
