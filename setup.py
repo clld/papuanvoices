@@ -29,7 +29,7 @@ setup(
         'dev': ['flake8', 'waitress', 'psycopg2'],
         'test': [
             'mock',
-            'pytest>=5.4',
+            'pytest>=7.4.0',
             'pytest-clld',
             'pytest-mock',
             'pytest-cov',
@@ -39,6 +39,10 @@ setup(
         ],
     },
     test_suite="papuanvoices",
+    message_extractors={'papuanvoices': [
+        ('**.py', 'python', None),
+        ('**.mako', 'mako', {'encoding': 'utf8'}),
+        ('web/static/**', 'ignore', None)]},
     entry_points="""\
     [paste.app_factory]
     main = papuanvoices:main

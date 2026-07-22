@@ -10,12 +10,12 @@
 <h2>${_('Parameter')} ${ctx.name}</h2>
 
 % if ctx.description:
-<p>${ctx.description}</p>
+    <p><strong>Papuan Malay:</strong> ${ctx.description}</p>
 % endif
 
 <div style="clear: both"/>
 % if map_ or request.map:
-${(map_ or request.map).render()}
+    ${(map_ or request.map).render()}
 % endif
 
 ${request.get_datatable('values', h.models.Value, parameter=ctx).render()}

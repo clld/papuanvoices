@@ -6,9 +6,8 @@ from sqlalchemy import (
     Integer,
     Boolean,
     ForeignKey,
-    UniqueConstraint,
 )
-from sqlalchemy.orm import relationship, backref
+from sqlalchemy.orm import relationship
 from sqlalchemy.ext.declarative import declared_attr
 from sqlalchemy.ext.hybrid import hybrid_property
 
@@ -16,19 +15,21 @@ from clld import interfaces
 from clld.db.meta import Base, CustomModelMixin
 from clld.db.models import common
 
-from clld_glottologfamily_plugin.models import HasFamilyMixin
-
+from clld_audio_plugin.models import Counterpart
 
 #-----------------------------------------------------------------------------
 # specialized common mapper classes
 #-----------------------------------------------------------------------------
 
+
 @implementer(interfaces.ILanguage)
-class Variety(CustomModelMixin, common.Language, HasFamilyMixin):
+class Variety(CustomModelMixin, common.Language):
     pk = Column(Integer, ForeignKey('language.pk'), primary_key=True)
     glottocode = Column(Unicode)
-
-
+    family = Column(Unicode)
+    count_lexemes = Column(Integer, default=0)
+    count_concepts = Column(Integer, default=0)
+    count_soundfiles = Column(Integer, default=0)
 
 
 @implementer(interfaces.IParameter)
@@ -36,4 +37,4 @@ class Concept(CustomModelMixin, common.Parameter):
     pk = Column(Integer, ForeignKey('parameter.pk'), primary_key=True)
     concepticon_id = Column(Unicode)
     concepticon_gloss = Column(Unicode)
-
+    count_lexemes = Column(Integer, default=0)
