@@ -24,6 +24,8 @@ setup(
         'clld-glottologfamily-plugin>=4.1',
         'pyglottolog>=4',
         'clldmpg>=4.2.0',
+        'pycldf',
+        'psycopg2',
     ],
     extras_require={
         'dev': ['flake8', 'waitress', 'psycopg2'],
