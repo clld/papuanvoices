@@ -26,6 +26,7 @@ setup(
         'clldmpg>=4.2.0',
         'pycldf',
         'psycopg2',
+        'cldfbench',
     ],
     extras_require={
         'dev': ['flake8', 'waitress', 'psycopg2'],
