@@ -44,7 +44,7 @@ def main(args):
             'license_name': license.name},
     )
 
-    r = get_dataset('papuanvoices', ep='lexibank.dataset')
+    r = get_dataset(args.cldf.directory.parent / 'lexibank_papuanvoices.py')
     authors, _ = r.get_creators_and_contributors()
     for ord, author in enumerate(authors):
         cid = slug(nameparser.parse(author['name']).family)
