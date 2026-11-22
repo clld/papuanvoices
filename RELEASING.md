@@ -7,9 +7,9 @@
   pip install -e .[test]
   ```
 
-* data is located [here](https://github.com/lexibank/papuanvoices).  
+* [data](https://github.com/lexibank/papuanvoices) is expected to be cloned to `../papuanvoices-cldf`
 
-* create the database (with data repo in `./papuanvoices-data/`)
+* create the database
   ```shell
   clld initdb --cldf ../papuanvoices-cldf/cldf/cldf-metadata.json --glottolog ../../glottolog/glottolog development.ini
   ```
@@ -17,5 +17,17 @@
 * run tests
   ```shell
   pytest
+  ```
+
+* Store the tested requirements:
+  ```shell
+  pip freeze > requirements.txt
+  ```
+
+* Store a db dump:
+  ```shell
+  pg_dump -xO papuanvoices > papuanvoices.sql
+  zip papuanvoices.sql.zip papuanvoices.sql
+  rm papuanvoices.sql
   ```
 

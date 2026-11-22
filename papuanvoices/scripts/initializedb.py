@@ -15,7 +15,7 @@ from clldutils.misc import slug
 from clld_glottologfamily_plugin.util import load_families
 from sqlalchemy import func
 from sqlalchemy.orm import joinedload
-from nameparser import HumanName
+import nameparser
 from pyglottolog import Glottolog
 
 import papuanvoices
@@ -47,7 +47,7 @@ def main(args):
     r = get_dataset('papuanvoices', ep='lexibank.dataset')
     authors, _ = r.get_creators_and_contributors()
     for ord, author in enumerate(authors):
-        cid = slug(HumanName(author['name']).last)
+        cid = slug(nameparser.parse(author['name']).family)
         c = data.add(
             common.Contributor,
             cid,
@@ -64,7 +64,7 @@ def main(args):
                 continue
             for name in c[role].split(' and '):
                 if name:
-                    cid = slug(HumanName(name).last)
+                    cid = slug(nameparser.parse(name).family)
                     contribs[c['Language_ID']][cid].append(role)
 
     ancestors = collections.defaultdict(list)
